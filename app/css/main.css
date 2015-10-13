@@ -1,0 +1,36 @@
+body .wrapper {
+  width: 675px;
+  height: 753px;
+  margin-left: 45px;
+  margin-top: 35px;
+  border-radius: 3px;
+  border: 2px solid #C1C1C1;
+  box-shadow: 0 1px 4px #C1C1C1; }
+  body .wrapper .header {
+    width: 100%;
+    height: 100px;
+    background-color: #3E8ACC;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center; }
+  body .wrapper .container #user-comment {
+    min-height: 100px; }
+    body .wrapper .container #user-comment input {
+      min-height: 100%;
+      text-wrap: unrestricted; }
+  body .wrapper .container .input {
+    text-align: center; }
+    body .wrapper .container .input input {
+      width: 600px;
+      height: 35px;
+      border: 2px solid #CCD1D4;
+      border-radius: 3px;
+      margin: 10px; }
+  body .wrapper .footer {
+    background-color: #C8DEF1;
+    height: 100px; }
+    body .wrapper .footer button {
+      background-color: #3E8ACC;
+      width: 120px;
+      height: 50px; }
