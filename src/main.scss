@@ -16,12 +16,12 @@ body {
       color: white;
       font-size: 30px;
       font-family: sans-serif;
-      text-align: center;
-
+      
       .title {
-
+        display: inline-block;
+        margin-top: 30px;
+        padding-left: 20px;
       }
-
     }
 
     .container {
@@ -29,9 +29,10 @@ body {
       #user-comment {
         min-height: 100px;
 
+
         input {
-        min-height: 100%;
-        text-wrap: unrestricted;
+          float: left;
+          display: inline-block;
         }
       }
 
@@ -56,6 +57,12 @@ body {
         background-color: #3E8ACC;
         width: 120px;
         height: 50px;
+        color: white;
+        border: 1px solid #267BC5;
+        border-radius: 3px;
+        margin-left: 15px;
+        margin-top: 15px;
+
       }
     }
   }

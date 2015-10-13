@@ -12,13 +12,16 @@ body .wrapper {
     background-color: #3E8ACC;
     color: white;
     font-size: 30px;
-    font-family: sans-serif;
-    text-align: center; }
+    font-family: sans-serif; }
+    body .wrapper .header .title {
+      display: inline-block;
+      margin-top: 30px;
+      padding-left: 20px; }
   body .wrapper .container #user-comment {
     min-height: 100px; }
     body .wrapper .container #user-comment input {
-      min-height: 100%;
-      text-wrap: unrestricted; }
+      float: left;
+      display: inline-block; }
   body .wrapper .container .input {
     text-align: center; }
     body .wrapper .container .input input {
@@ -33,4 +36,9 @@ body .wrapper {
     body .wrapper .footer button {
       background-color: #3E8ACC;
       width: 120px;
-      height: 50px; }
+      height: 50px;
+      color: white;
+      border: 1px solid #267BC5;
+      border-radius: 3px;
+      margin-left: 15px;
+      margin-top: 15px; }
