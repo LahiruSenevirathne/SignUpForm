@@ -2,7 +2,7 @@ body {
 
   .wrapper {
     width: 675px;
-    height: 753px;
+    height: 100%;
     margin-left: 45px;
     margin-top: 35px;
     border-radius: 3px;
@@ -46,6 +46,13 @@ body {
           border-radius: 3px;
           margin: 10px;
         }
+      }
+
+      select {
+        margin: 30px;
+        border-image-width: 100%;
+        width: 605px;
+        margin-left: 30px;
       }
     }
 
