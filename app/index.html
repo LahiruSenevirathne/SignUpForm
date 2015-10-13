@@ -28,12 +28,13 @@
   </div>
 </script>
 <script type="text/template" id="itemSelector">
-  <select name="language" id="LangSelect">
+  <select class="languages" name="language" id="LangSelect">
+    <option value='default' selected>Select Language...</option>
 
   </select>
 </script>
 <script type='text/template' id='selectOption'>
-  <option value='<%= value %>'>>'<%= label %>'</object>
+  <option value='<%= value %>'><%= label %></object>
 </script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

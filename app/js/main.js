@@ -23,23 +23,27 @@
 
     _.each(data, function (attrib) {
 
-      // var selectHTML = renderSelector(attrib)
-      // var SelectOption = $('#selectOption')
-      // var renderOption = _.template(selectOption)
-      // var SelOptions = attrib.options
+      console.log('attrib', attrib);
+
+      var freshHTML = renderTemplate(attrib);
+      var selectHTML = renderSelector(attrib);
+      var SelOptions = attrib.options;
+
+      if (SelOptions.length > 0 && attrib.type === 'select') {
+        $('.container').append(selectHTML);
+        var SelectOption = $('#selectOption').text();
+        var renderOption = _.template(SelectOption);
+        _.each(SelOptions, function (option) {
+          var optionHTML = renderOption(option);
+          $('.languages').append(optionHTML);
+        });
+      } else {
+        $('.container').append(freshHTML);
+      }
 
       // _.each(lang,function {
       //     $('<select>').append(renderOption)
       //   });
-
-      console.log('attrib', attrib);
-
-      if (attrib.options > 0 && type === 'select') {
-        $('container').append(selectHTML);
-      } else {
-        var freshHTML = renderTemplate(attrib);
-        $('.container').append(freshHTML);
-      }
     });
   });
 
